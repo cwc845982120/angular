@@ -8,6 +8,12 @@
         "experimentalDecorators": true,
         "removeComments": true,
         "noImplicitAny": false,
-        "declaration": false
+        "declaration": false,
+        // ERROR in /Users/caowencheng/Documents/my project/angular/node_modules/@angular/core/src/change_detection/differs/default_iterable_differ.d.ts
+        // (28,32): error TS2304: Cannot find name 'Iterable'.
+
+        // ERROR in /Users/caowencheng/Documents/my project/angular/node_modules/@angular/core/src/change_detection/differs/iterable_differs.d.ts
+        // (15,48): error TS2304: Cannot find name 'Iterable'.
+        "skipLibCheck": true //"skipLibCheck": true 解决上述bug报错 
     }
 }
