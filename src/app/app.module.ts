@@ -6,9 +6,11 @@ import 'zone.js/dist/zone';
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent }   from './first/first.component';
+
 @NgModule({
   imports:      [ BrowserModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })
+
 export class AppModule { }

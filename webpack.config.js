@@ -13,7 +13,6 @@ module.exports = {
         ventor: ['@angular/platform-browser-dynamic', '@angular/core', 'axios']
     },
     output: {
-        publicPath: '/',
         path: path.resolve(__dirname, 'dist'),
         filename: './static/js/[name]-[hash].js'
     },
@@ -99,7 +98,7 @@ module.exports = {
                     loader: 'css-loader',
                     options: {
                         sourceMap: false,
-                        module: true,
+                        module: false,
                         minimize: true,
                         localIdentName: "[name]_[local]_[hash:base64:3]"
                     }

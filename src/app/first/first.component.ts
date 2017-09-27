@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import axios from 'axios'
+import axios from '../../common/http'
+import './first.component.scss'
 
 @Component({
   	selector: 'my-app',
-	templateUrl: './src/app/first/first.tpl.html'
+	template: `
+		<div class="first">
+			<h1>angular</h1>
+			<div (click)="getResponse()">ajax</div>
+		</div>
+	`
 })
 
 export class AppComponent { 
-	message = "Angular 应用";
 	getResponse() {
 		axios.post('test',{}).then(function(res) {
 			console.log(res);
