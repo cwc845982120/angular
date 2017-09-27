@@ -10,6 +10,7 @@ import './first.component.scss'
 			<div (click)="getResponse()">ajax</div>
 			<my-second></my-second>
 			<!-- 路由内容显示区域 -->
+			<router-outlet></router-outlet>
 		</div>
 	`
 })
