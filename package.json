@@ -18,6 +18,8 @@
         "@angular/platform-browser-dynamic": "4.4.3",
         "@angular/router": "4.4.3",
         "@angular/upgrade": "4.4.3",
+        "@ngrx/core": "^1.2.0",
+        "@ngrx/store": "2.2.3",
         "angular-in-memory-web-api": "0.4.6",
         "axios": "^0.16.2",
         "bootstrap": "^3.3.7",
