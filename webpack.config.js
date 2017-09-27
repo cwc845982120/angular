@@ -10,7 +10,7 @@ module.exports = {
     entry: {
         app: ['./index.ts'],
         //公共文件
-        ventor: ['@angular/platform-browser-dynamic', '@angular/core', 'axios']
+        vendor: ['@angular/platform-browser-dynamic', '@angular/core', 'axios']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),

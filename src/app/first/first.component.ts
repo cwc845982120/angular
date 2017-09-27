@@ -1,24 +1,25 @@
 import { Component } from '@angular/core';
-import axios from '../../common/http'
+import { httpService }   from '../../sevices/http.service';
 import './first.component.scss'
 
 @Component({
-  	selector: 'my-app',
+	selector: 'my-app',
 	template: `
 		<div class="first">
-			<h1>angular</h1>
+			<h1>first</h1>
 			<div (click)="getResponse()">ajax</div>
+			<my-second></my-second>
+			<!-- 路由内容显示区域 -->
 		</div>
 	`
 })
 
 export class AppComponent { 
-	getResponse() {
-		axios.post('test',{}).then(function(res) {
-			console.log(res);
-		})
-		.catch(e =>  {
-			console.log(e);
-		})
+	constructor(
+		private httpService : httpService
+	){ }
+
+	getResponse(): void {
+		this.httpService.getResponse('test', {});
 	}
 }
